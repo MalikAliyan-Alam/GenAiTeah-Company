@@ -1,8 +1,162 @@
-.herosec{
-    background: linear-gradient(to left, rgba(0,0,0,0.3)80%,rgba(0,0,0,0.3)20%),url("./assests/heropage.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: right;
-    height: 100vh;
-    width: 100%;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+body {
+    font-family: sans-serif;
+    background: #111;
+    color: white;
+}
+
+.herosec {
+    width: 100%;
+    min-height: 100vh;
+    background: url('./assests/heropage.jpg') center/cover no-repeat;
+}
+
+/* ____________________________ Header ____________________________*/
+header {
+    width: 100%;
+    padding: 20px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    z-index: 100;
+}
+
+header nav ul {
+    display: flex;
+    gap: 30px;
+    list-style: none;
+}
+
+header nav ul li a {
+    position: relative;
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    font-weight: 500;
+    padding-bottom: 4px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #3b93f8;
+}
+
+header nav ul li a::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 2px;
+    background: #3b93f8;
+    transition: width 0.3s ease;
+}
+
+header nav ul li a:hover::after {
+    width: 100%;
+    /* animated bottom border */
+}
+
+.btn-wrap button {
+    padding: 15px 20px;
+    background: transparent;           
+    border: 3px solid white;          
+    color: white;                      
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.3s ease;         
+}
+
+.btn-wrap button:hover {
+    background: #3b93f8;               
+    border-color:#3b93f8;             
+    color: #fff;                   
+    transform: translateY(-2px);       
+    box-shadow: 0 4px 12px rgba(247,15,247,0.4);
+}
+
+.hamburger {
+    display: none;
+    font-size: 28px;
+    cursor: pointer;
+    user-select: none;
+    color: white;
+}
+
+/* --------------------------- Mobile Styles ---------------------------- */
+@media(max-width:768px) {
+    .btn-wrap {
+        display: none;
+    }
+header{
+    padding: 20px 20px;
+
+}
+    header nav {
+        position: fixed;
+        top: 0;
+        right: 0;
+        width: 75%;
+        max-width: 300px;
+        height: 100vh;
+        background: rgba(0, 0, 0, 0.75);
+        backdrop-filter: blur(10px);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateX(100%);
+        transition: transform 0.4s ease;
+    }
+
+    header nav.show {
+        transform: translateX(0);
+        /* Slide from RIGHT */
+    }
+
+    header nav ul {
+        flex-direction: column;
+        gap: 40px;
+        list-style: none;
+    }
+
+    header nav ul li {
+        opacity: 0;
+        transform: translateX(30px);
+        transition: all 0.4s ease;
+    }
+
+    header nav.show ul li {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+    header nav.show ul li:nth-child(1) {
+        transition-delay: 0.1s;
+    }
+
+    header nav.show ul li:nth-child(2) {
+        transition-delay: 0.2s;
+    }
+
+    header nav.show ul li:nth-child(3) {
+        transition-delay: 0.3s;
+    }
+
+    header nav.show ul li:nth-child(4) {
+        transition-delay: 0.4s;
+    }
+
+    .hamburger {
+        display: block;
+        position: relative;
+        z-index: 200;
+    }
+}
+/* ____________________________ Header close ____________________________*/
