@@ -61,14 +61,12 @@ header nav ul li a::after {
 header nav ul li a:hover::after {
     width: 100%;
 }
-
-
 .btn-wrap button:hover {
     background: #3b93f8;
     border-color: #3b93f8;
     color: #fff;
     transform: translateY(-2px);
-    box-shadow: 0 4px 12px rgba(247, 15, 247, 0.4);
+    box-shadow: 0 4px 12px rgba(247, 15, 247, 0.295);
 }
 
 .mobile-btn button {
