@@ -65,21 +65,21 @@ header nav ul li a:hover::after {
 
 .btn-wrap button {
     padding: 15px 20px;
-    background: transparent;           
-    border: 3px solid white;          
-    color: white;                      
+    background: transparent;
+    border: 3px solid white;
+    color: white;
     border-radius: 6px;
     cursor: pointer;
     font-weight: 600;
-    transition: all 0.3s ease;         
+    transition: all 0.3s ease;
 }
 
 .btn-wrap button:hover {
-    background: #3b93f8;               
-    border-color:#3b93f8;             
-    color: #fff;                   
-    transform: translateY(-2px);       
-    box-shadow: 0 4px 12px rgba(247,15,247,0.4);
+    background: #3b93f8;
+    border-color: #3b93f8;
+    color: #fff;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(247, 15, 247, 0.4);
 }
 
 .hamburger {
@@ -95,10 +95,12 @@ header nav ul li a:hover::after {
     .btn-wrap {
         display: none;
     }
-header{
-    padding: 20px 20px;
 
-}
+    header {
+        padding: 20px 20px;
+
+    }
+
     header nav {
         position: fixed;
         top: 0;
@@ -159,4 +161,5 @@ header{
         z-index: 200;
     }
 }
+
 /* ____________________________ Header close ____________________________*/
