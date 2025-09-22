@@ -62,7 +62,8 @@ header nav ul li a::after {
 header nav ul li a:hover::after {
     width: 100%;
 }
-.btn-wrap button:hover {
+.btn-wrap button:hover, 
+.heroBtn button:hover {
     background: #713DE7;
     border-color: #713DE7;
     color: #fff;
@@ -75,6 +76,7 @@ header nav ul li a:hover::after {
 }
 
 .btn-wrap button,
+.heroBtn button,
 .mobile-btn button {
     padding: 15px 20px;
     background: transparent;
@@ -107,6 +109,7 @@ header nav ul li a:hover::after {
 
 .mainHeading{
     color: #713DE7;
+    font-size: 55px;
 }
 
 /* --------------------------- Mobile Styles ---------------------------- */
@@ -195,7 +198,14 @@ header nav ul li a:hover::after {
             cursor: pointer;
             z-index: 200;
         }
+
+    }
+
+    /* _____ Header close _______*/
+
+    .mainHeading{
+        font-size: 45px;
+        
     }
 }
 
-/* ____________________________ Header close ____________________________*/
