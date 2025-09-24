@@ -112,6 +112,33 @@ header nav ul li a:hover::after {
     font-size: 55px;
 }
 
+/* Hero Section COmpleted */
+
+
+
+.serviceSec{
+    background-color: #4D27D2;
+}
+
+
+.plancard{
+    background-color: #0C052E;
+    box-shadow: 4px 4px 15px white;
+}
+
+.plancard h4{
+    color: #713DE7;
+}
+
+.planbtn{
+    background-color: #4D27D2;
+    color: white;
+}
+
+
+
+
+
 /* --------------------------- Mobile Styles ---------------------------- */
 @media(max-width:768px) {
     .btn-wrap {
