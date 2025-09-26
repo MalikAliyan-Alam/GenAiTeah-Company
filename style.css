@@ -143,8 +143,13 @@ header nav ul li a:hover::after {
 
 
 .plancard{
-    background-color: #120c31;
+    background-color: #181332;
     box-shadow: 4px 4px 15px white;
+}
+
+.plancard:hover{
+    transform: scale(1.02);
+    transition: all 0.3s ease-out;
 }
 
 .plancard h4{
@@ -166,7 +171,85 @@ header nav ul li a:hover::after {
     transition: all 0.5s ease;
 }
 
+.attachImg{
+    background: url('./assests/attachedfinal.png') center/cover no-repeat;
+    height: 90vh;
+    width: 100%;
+    background-attachment: fixed;
+    filter: brightness(0.8);
+    z-index: -1;
+}
+.spaceCont{
+    width: 100%;
+    height: 9vh;
+}
 
+.attachContent{
+    width: 90%;
+    height: 70vh;
+    background: rgba(255, 251, 251, 0.1); 
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.4); /* Subtle shadow for depth */
+    backdrop-filter: blur(5px); /* Blurs the content behind the element */
+    -webkit-backdrop-filter: blur(5px); /* Vendor prefix for older browsers */
+    border: 1px solid rgba(255, 255, 255, 0.3); 
+}
+
+.attachContent h1{
+    margin-left: 2%;
+    font-size: 45px;
+    color: white;
+}
+
+.attachContent h1 span{
+    color: #4D27D2;
+    text-decoration: underline;
+}
+
+
+.attachimgcont1{
+    width: 90px;
+    height: 90px;
+    background-image: url("./assests/analysis.png");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.attachcards h3,
+.attachcards p{
+    color: white;
+    padding-top: 10px;
+    padding-left: 30px;
+}
+
+.attachcards h3{
+    color: #4D27D2;
+    font-weight: 700;
+}
+
+.attachimgcont2{
+    width: 90px;
+    height: 90px;
+    background-image: url("./assests/detection.png");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    padding-top: 20px;
+    margin-left: 30px;
+}
+
+.attachimgcont3{
+    width: 90px;
+    height: 90px;
+    background-image: url("./assests/predictive.png");
+    background-size: cover;
+    border-radius: 50%;
+    background-position: center;
+    padding-top: 20px;
+    margin-left: 30px;
+}
 
 /* --------------------------- Mobile Styles ---------------------------- */
 @media(max-width:768px) {
@@ -263,5 +346,19 @@ header nav ul li a:hover::after {
         font-size: 45px;
         
     }
+
+    .chooseh1{
+        font-size: 30px;
+    }
+
+    .choosepara{
+        font-size: 8px;
+        line-height: 1.2;
+    }
+
+    .attachContent h1{
+        font-size: 35px;
+    }
+
 }
 
